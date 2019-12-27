@@ -1,0 +1,54 @@
+{
+  "bags": [
+    {
+      "id": "b1",
+      "brand": "Northface",
+      "name": "Reckon",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/71qvILI8UuL._SL1001_.jpg",
+      "price": 99,
+      "inStock": false
+    },
+    {
+      "id": "b2",
+      "brand": "Northface",
+      "name": "borealis",
+      "image": "https://www.greatoutdoors.ie/shop/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/0/4/041_hi_chk4-uhj-0.jpg",
+      "price": 79,
+      "inStock": true
+    },
+    {
+      "id": "b3",
+      "brand": "Northface",
+      "name": "surge",
+      "image": "https://s7d1.scene7.com/is/image/MoosejawMB/10373595x1194645_zm?$product1500$",
+      "price": 119,
+      "inStock": true
+    }
+  ],
+  "cups": [
+    {
+      "id": "c1",
+      "brand": "Contigo",
+      "name": "Twistseal glaze",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/418tOqkaBcL._SY679_.jpg",
+      "price": 20,
+      "inStock": true
+    },
+    {
+      "id": "c2",
+      "brand": "Contigo",
+      "name": "West-Loop",
+      "image": "https://i.ebayimg.com/images/g/AzIAAOSwqVdar~ZN/s-l1600.jpg",
+      "price": 35,
+      "inStock": true
+    },
+    {
+      "id": "c3",
+      "brand": "Contigo",
+      "name": "Chill",
+      "image": "https://www.gocontigo.com/media/catalog/product/cache/19/image/425x/040ec09b1e35df139433887a97daa66f/7/1/71113_contigo_fit_20oz_dazzlingblue_4_1.jpg",
+      "price": 30,
+      "inStock": false
+    }
+  ]
+}
