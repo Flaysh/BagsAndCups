@@ -2,12 +2,12 @@ import React, { useState } from "react";
 
 // import "./BagList.css";
 import axios from "axios";
-import Bag from '../Bag/Bag'
+import Bag from '../Bag/Bag';
 const BagList = props => {
   const [bags, setBags] = useState([]);
 
   axios
-    .get("https://api.myjson.com/bins/qn16")
+    .get("https://api.myjson.com/bins/qn16s")
     .then(res => {
       const bags = res.data.bags;
       setBags(bags);

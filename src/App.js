@@ -16,20 +16,20 @@ import axios from 'axios';
 
 
 class App extends Component {
-  state={
-    bags:[],
-    cups:[],
-  }
-  componentDidMount = () => {
-    axios.get('https://api.myjson.com/bins/qn16s')
-    .then(res => {
-       this.setState({bags : res.data.bags , cups : res.data.cups})
-      //  console.log(this.state);
-    })
-    .catch(err => {
-      console.error(err);
-    });
-  }
+  // state={
+  //   bags:[],
+  //   cups:[],
+  // }
+  // componentDidMount = () => {
+  //   axios.get('https://api.myjson.com/bins/qn16s')
+  //   .then(res => {
+  //      this.setState({bags : res.data.bags , cups : res.data.cups})
+  //     //  console.log(this.state);
+  //   })
+  //   .catch(err => {
+  //     console.error(err);
+  //   });
+  // }
 
 
   render() {
@@ -40,10 +40,10 @@ class App extends Component {
         <NavbarApp/>
         <Switch>
           <Route path="/Bags">
-            <Bags bags={this.state.bags} />
+            <Bags />
           </Route>
           <Route path="/cups">
-            <Cups cups={this.state.cups}/>
+            <Cups/>
           </Route>
           <Route path="/" exact>
             <Home />
