@@ -3,12 +3,12 @@ import { Card, Button } from 'react-bootstrap';
 
 
 
-const Bag = props => {
+const Cup = props => {
 
     return (
         <div>
             <Card style={{ margin: "1rem" , width: '18rem' , border:'none' }} bg="secondary" text="white">
-                <Card.Img variant="top" src={props.image} alt={props.name}  height='300rem'  />
+                <Card.Img variant="top" src={props.image} alt={props.name} height='300rem' />
                 <Card.Body>
                     <Card.Title>{props.brand}
                         <br />
@@ -26,4 +26,4 @@ const Bag = props => {
     );
 };
 
-export default Bag;
+export default Cup;

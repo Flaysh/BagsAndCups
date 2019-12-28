@@ -2,19 +2,19 @@ import React, { useState } from "react";
 
 // import "./BagList.css";
 import axios from "axios";
-import Bag from '../Bag/Bag';
+import Cup from '../Cup/Cup';
 import { CardDeck } from "react-bootstrap";
-const BagList = props => {
-  const [bags, setBags] = useState([]);
+const CupList = props => {
+  const [cups, setCups] = useState([]);
 
 
-  if(bags.length === 0){
+  if(cups.length === 0){
     axios
     .get("https://api.myjson.com/bins/qn16s")
     .then(res => {
-      const bags = res.data.bags;
-      setBags(bags);
-      console.log(bags)
+      const cups = res.data.cups;
+      setCups(cups);
+      console.log(cups)
     })
     .catch(function(error) {
       // handle error
@@ -25,10 +25,10 @@ const BagList = props => {
 
   
 
-  if (bags.length === 0) {
+  if (cups.length === 0) {
     return (
       <div className="catalog center">
-          <h2>No Bags found.</h2>
+          <h2>No Cups found.</h2>
           {/* <Button goto='/'>Add Jewelry</Button> */}
       </div>
     );
@@ -36,8 +36,8 @@ const BagList = props => {
 
   return (
     <CardDeck style={{margin:"1rem"}} className="catalog-list">
-      {bags.map(bag => (
-        <Bag
+      {cups.map(bag => (
+        <Cup
           id={bag.id}
           brand={bag.brand}
           name={bag.name}
@@ -50,5 +50,5 @@ const BagList = props => {
   );
 };
 
-export default BagList;
+export default CupList;
 

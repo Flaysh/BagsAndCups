@@ -8,29 +8,13 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import Bags from './Components/BagList/BagList';
-import Cups from './Components/Cups/Cups';
+import BagList from './Components/BagList/BagList';
+import CupList from './Components/CupList/CupList';
 import Home from './Components/Home/Home';
-import axios from 'axios';
 
 
 
 class App extends Component {
-  // state={
-  //   bags:[],
-  //   cups:[],
-  // }
-  // componentDidMount = () => {
-  //   axios.get('https://api.myjson.com/bins/qn16s')
-  //   .then(res => {
-  //      this.setState({bags : res.data.bags , cups : res.data.cups})
-  //     //  console.log(this.state);
-  //   })
-  //   .catch(err => {
-  //     console.error(err);
-  //   });
-  // }
-
 
   render() {
     return (
@@ -40,10 +24,10 @@ class App extends Component {
         <NavbarApp/>
         <Switch>
           <Route path="/Bags">
-            <Bags />
+            <BagList />
           </Route>
           <Route path="/cups">
-            <Cups/>
+            <CupList/>
           </Route>
           <Route path="/" exact>
             <Home />

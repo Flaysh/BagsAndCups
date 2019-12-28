@@ -10,7 +10,7 @@ const NavbarApp = () => {
     return (
         <div>
             <Navbar bg="dark" expand="sm" variant="dark">
-                <Navbar.Brand href="#home">
+                <Navbar.Brand >
                     <img
                         alt="icon"
                         src={icon}
